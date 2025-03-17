@@ -2,9 +2,6 @@ import os
 import time
 import sys
 import pyfiglet
-import requests
-import webbrowser
-#os.system('pkg install espeak')
 
 # Color Codes
 R = "\033[1;31m"  # Red
@@ -129,39 +126,3 @@ while True:
     if int(success) > int(0): 
         print("\n Accounts :  " + "\n".join(accounts))
     os.system("clear")  # Clear the screen
-def meyexudi():
-    os.system('clear')  # Clears terminal screen
-    
-print("TABBU TOOL")
-
-    # Generate User ID
-    user_id = f"md{os.getuid()}tabbu{os.getuid()}FREE.TOOL"
-
-    # Fetch approval list
-    try:
-        response = requests.get("https://raw.githubusercontent.com/Tabbu-Arain/SafeUm-Login-Generater/blob/main/approval.txt")
-        approved_ids = response.text
-    except requests.exceptions.RequestException:
-        print("❌ Error: Unable to fetch approval list.")
-        return
-
-    # Check if ID is approved
-    if user_id in approved_ids:
-        print(" Your Key is Approved!💝")
-    else:
-        print(f"\033[32;1m[+] Your Key: {user_id}")
-        
-        # Voice Notification (Linux Only)
-        os.system('espeak -a 200 "Assalamualaikum, Please send your key for approval."')
-
-        print(f" \x1b[0m║══[KEY]  : {user_id}")
-        input('\033[1;30m╚══[•] IF YOU WANT APPROVAL FOR FREE THEN PRESS ENTER ')
-
-        # Create WhatsApp Approval Message
-        whatsapp_message = f"Hello Sir! Please Approve My Token. The Token Is: {user_id}"
-        whatsapp_link = f"https://wa.me/+994402197773?text={whatsapp_message.replace(' ', '%20')}"
-
-        # Open WhatsApp Approval Request
-        webbrowser.open(whatsapp_link)
-
-meyexudi()
