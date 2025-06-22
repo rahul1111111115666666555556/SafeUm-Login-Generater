@@ -19,9 +19,9 @@ print(R + ab)
 
 # Display Information
 to(
-    f"""\x1b[1;92mAUTHOR   : \x1b[1;92mTabbu \x1b[1;92mArain 
+    f"""\x1b[1;92mAUTHOR   : \x1b[1;92mRahul \x1b[1;92mDon
 Tools    : \x1b[1;93mSafeUm Account Creator     \x1b[1;92m  
-\x1b[1;93mJanu     : \x1b[1;92mItz Rehmani 🐥          
+\x1b[1;93mJanu     : \x1b[1;92N 🐥          
 \x1b[1;92mVERSION  : \x1b[1;93m2.0      \x1b[1;95m          
 𝚃𝚎𝚛𝚒 𝚢𝚊𝚍𝚘𝚗 𝚖𝚊 𝚔𝚑𝚘𝚢𝚊 𝚛𝚎𝚑𝚝𝚊 𝚑𝚞\x1b[1;91m"""
 )
@@ -42,7 +42,7 @@ Welcome To Tabbu's Safeum Tool
 """)
 
 # Automatically open youtube channel
-os.system("am start -a android.intent.action.VIEW -d https://www.facebook.com/TabbuArain")
+os.system("am start -a android.intent.action.VIEW -d https://www.facebook.com/arti.raturi.184")
 
 from ssl import CERT_NONE
 from gzip import decompress
