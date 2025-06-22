@@ -14,7 +14,7 @@ def to(s):
         time.sleep(23.0 / 8000)
   
 # New logo
-ab = pyfiglet.figlet_format("TABBU")
+ab = pyfiglet.figlet_format("RAHUL")
 print(R + ab)
 
 # Display Information
@@ -36,7 +36,7 @@ def slow(T):
 slow(R + """ 
 -------------------------------
 
-Welcome To Tabbu's Safeum Tool  
+Welcome To Rahul's Safeum Tool  
 
 -------------------------------
 """)
@@ -64,7 +64,7 @@ accounts = []
 # Function to create Safeum accounts
 def work():
     global failed, success, retry
-    username = choice('tabbuarain') + ''.join(choices(list('tabbuarain1234567890'), k=12))
+    username = choice('Rahul') + ''.join(choices(list('rahuldon1234567890'), k=12))
     try:
         con = create_connection("wss://193.200.173.45/Auth", header={
             "app": "com.safeum.android",
