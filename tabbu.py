@@ -110,9 +110,9 @@ def work():
         gzip = decompress(con.recv()).decode('utf-8')
         if '"status":"Success"' in gzip:
             success += 1
-            accounts.append(username + f':{G}Creator (Tabbu){R}')
-            with open('Tabbu.Safeum.Acc.txt', 'a') as f: 
-                f.write(username + f":{G}Creator (Tabbu){R}\n")
+            accounts.append(username + f':{G}Creator (Rahul don){R}')
+            with open('Rahul.Safeum.Acc.txt', 'a') as f: 
+                f.write(username + f":{G}Creator (Rahul don){R}\n")
         else:
             failed += 1
     except:
